@@ -54,7 +54,5 @@ window.addEventListener('scroll', function() {
     }
 })
 
-    window.addEventListener('load', function () {
-    document.body.classList.add('loaded');
-    });
+
 
