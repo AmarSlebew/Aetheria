@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+body.loaded {
+    opacity: 1;
+}
+
+header{
+    background-image: url('img/bacgkround.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Tambahkan untuk posisi gambar yang lebih baik */
+    border-image: fill 0 linear-gradient(rgba(255, 255, 255, 0.067),#65bdbf);
+    width: 100%;
+    min-height: 100vh; /* Ubah dari height: auto ke min-height: 100vh */
+    display: flex;
+    flex-direction: column;
+    /* PENTING: Pastikan tidak ada margin atau padding yang tidak diinginkan */
+    margin: 0;
+    padding: 0;
+}
+
+.back{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.logo{
+    width: 80px;
+    height: auto;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+}
+
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+
+}
+
+nav li{
+    list-style-type: none;
+    
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 80px;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in;
+}
+
+li :hover{
+    background-color: white;
+    color: black;
+
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 1px;
+    position: fixed; /* Ubah dari sticky ke fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+    /* TRANSPARAN DEFAULT */
+    background: transparent;
+    backdrop-filter: none;
+    
+    /* TRANSISI HALUS */
+    transition: all 0.3s ease;
+}
+
+/* NAVBAR DENGAN BACKGROUND SAAT SCROLL */
+nav.scrolled {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: 0;
+}
+
+/* PERUBAHAN WARNA LINK SAAT SCROLL */
+nav.scrolled li a {
+    color: #333;
+}
+
+
+
+.textHome{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px;
+    padding-left: 30px;
+    margin-top: 200px;
+    margin-bottom: 500px;
+}
+
+.descHome{
+    font-size: 16px;
+}
+
+.btn-book {
+    margin-top: 25px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(0, 72, 124);
+    padding: 12px;
+    font-family: karla;
+    font-weight: 700;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.link{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.btn-book:hover {
+    color: black;
+    background-color: white;
+    border-color: rgb(0, 72, 124);
+}
+
+.fa-instagram {
+    color: white;
+    text-decoration: none;
+    margin-left : 8px;
+    width: 100px;
+    height: auto;
+}
+
+/* about */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9f9e9e;
+    text-align: center;
+    padding: 80px;
+
+}
+.fotoSuasana{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card{
+    width: 15vw;
+    aspect-ratio: 1 / 2 ;
+    gap: 1.5rem;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.textAbout{
+    color: rgb(46, 39, 39);
+    font-size: 45px;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+.descAbout{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.sub{
+    position: relative;
+}
+
+.hov{
+    position: absolute;
+    bottom: 0;
+    width: 16vw;
+    top :80%;
+    bottom: 20%;
+    color: white;
+    font-family: karla;
+}
+
+/* galeri */
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #317873
+}
+
+.tombol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.baris1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto{
+    width: 20vw;
+    aspect-ratio: 1/1;
+    border-radius : 20px;
+    padding: 10px;
+}
+
+.textGaleri{
+    font-weight: 600;
+    color: whitesmoke;
+    font-size: 5vw;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+.btn-galeri{
+    border: 2px solid white;
+    cursor: pointer;
+    background-color: white;
+    color: #000000;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: all ease-in 0.2s;
+    font-family: karla;
+}
+
+.btn-galeri:hover {
+    background-color: rgb(161, 191, 255);
+    border-bottom: white;
+    color: white;
+}
+
+.btn-galeri.active {
+    background-color: rgb(0, 55, 174); 
+    color: white;
+}
+
+/* property */
+
+.textHarga{
+    font-size: 10vw;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.container-slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.container-harga{
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    animation: scroll 60s linear infinite;
+    /* height: auto; */
+    /* margin-left: 200px; */
+    /* overflow :hidden; */
+}
+.kartu{
+    flex: 0 0 auto;
+    width: 60vw;                     /* Menyesuaikan lebar layar */
+    max-width: 230px;               /* Biar tidak terlalu besar di desktop */
+    height: auto;
+    aspect-ratio: 1 / 1.05;   
+    margin-bottom: 50px;
+    background-color: rgb(255, 255, 255);   
+    margin :8px;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.41);;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    /* position: relative; */
+}
+
+.container-harga :hover {
+    /* scroll-snap-align: none !important ; */
+    background-color: #9f9e9e;
+}
+
+.container-slider :hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+.etalase{
+    width: 85%;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    object-fit: cover;
+    transform: translateY(4px);
+    margin-bottom:0 ;
+    /* position: absolute; */
+    /* top: 10%;
+    right: 10%; */
+}
+
+.deskripsi{
+    display: flex;
+    justify-content: space-around;
+    gap: 9px;
+    align-items: center;
+    margin-left: -10px;
+}
+.lokasi{
+    margin-top: 15px;
+}
+
+.deskripsi p {
+    font-size: 60%;
+    color: rgb(163, 83, 22);
+}
+
+.fasilitas{
+    margin-left: -80px;
+}
+.fasilitas p {
+    font-size: 60%;
+}
+#fas {
+    font-weight: bold;
+}
+
+.harga {
+    color: rgb(163, 83, 22);
+    font-weight: 600;
+    transform: translateX(80px);
+    margin-top: 8px;
+}
+/* footer */
+.bawah{
+    background-color: #111827;
+    color: white;
+    display: flex;
+    flex-direction: row ;
+    gap: 10em;
+    justify-content: space-around;
+    padding: 100px 0 100px 0;
+}
+
+.kontak p{
+    padding: 5px;
+}
+.medsos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20vw;
+    height: auto;
+}
+.ic a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+    margin: 0;
+    padding: 15px;
+    font-size: 30px;
+    flex-direction: column ;
+    /* text-align: center; */
+}
+
+
+.ic{
+    display: flex;
+    justify-content: center;
+    margin-right: 1.9em;
+}
+.medsos h2{
+    text-align: center;
+    /* margin-right: 5px; */
+}
+
+#ig{
+    margin: 0;
+    width: 0;
+}
+
+.copy{
+    background-color: #2b3854;
+    color: white;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0 5px 0;
+}
+
+footer{
+    background-color: #2b3854;
+}
+.min{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin-right : 3em;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width : 650px) {
+html,body{
+    overflow-x: hidden;
+
+}
+    nav{
+        justify-content: center;
+        font-size: 2vw;
+        padding: 15px;
+        /* display: none; */
+    }
+
+    nav img{
+        display: none;
+    }
+
+    nav.scrolled{
+        padding: 15px;
+    }
+
+    /* about  */
+
+    .fotoSuasana{
+        flex-direction: column;
+    }
+    .card {
+        width: 60vw;
+        padding: 5px 0 0 0;
+    }
+
+    .hov{
+        display: none;
+    }
+
+    /* galeri  */
+    .textGaleri{
+        font-size: 15vw;
+    }
+
+    .foto{
+        width: 30vw;
+    }
+
+    /* footer  */
+    .bawah{
+    flex-direction: column;
+        padding: 30px;
+        gap: 2em;
+    }
+    }
+    
+    .medsos{
+        flex-direction: row;
+        margin-left: 80px;
+    }
+
+    .medsos h2{
+    display: none;
+    }
+
+
+
+
+    .ic a{
+        flex-direction: row;
+    }
+
+    .copy{
+        margin-left: 10px;
+    }
+
+    footer{
+        margin-top: 80px;
+    }
+    
+@media screen and (min-width : 649px) and (max-width : 1525px) {
+    .hov{
+        display: none;
+    }
+}
+

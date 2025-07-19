@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetheria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <!-- Logo Bisnis -->
+        <div class="logo">
+            <img src="img/aetheria.png" class="foto" ogo">
+        </div>
+
+        <!-- Navigation -->
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#property">Property</a></li>
+        </ul>
+    </nav>
+    <header id="home">
+
+        <!-- <img src="img/bacgkround.webp" class="foto"ambar" class="back"> -->
+        <div data-aos="fade-right" data-aos-duration="2000" class="textHome">
+            <H1>Aetheria Retreat <br>
+                for a Luxury Seaside Villa</H1>
+            <p class="descHome">Selamat datang di Aetheria Retreat, surga tersembunyi di tepi laut yang dirancang untuk
+                Anda yang <br>mendambakan pelarian dari rutinitas. Di sini, suara ombak menjadi musik alami, angin laut
+                membelai <br> lembut wajah Anda, dan setiap sudut vila menyuguhkan kenyamanan tanpa kompromi. <br>
+                Nikmati pagi Anda dengan pemandangan samudera yang membentang tanpa batas, bersantai di balkon pribadi
+                <br>
+                sambil menyeruput kopi, atau biarkan tubuh Anda dimanjakan dengan layanan spa yang eksklusif.
+            </p>
+            <!-- Tombol Booking -->
+            <a class="link" href="404.html"> 
+            <button class="btn-book" href = "404.html" >Booking Now</button>
+            </a>
+            <a href="#" class="fa fa-instagram"></a>
+    </header>
+
+    <main>
+        <section class="about" id="about">
+            <h2 data-aos="fade-down" data-aos-duration="1000" class="textAbout">About</h2>
+            <p data-aos="fade-down" data-aos-duration="1000" class="descAbout">Aetheria Retreat adalah vila tepi laut
+                yang dirancang untuk Anda yang mendambakan
+                pelarian tenang dari
+                hiruk-pikuk dunia. <br> Terletak di lokasi tropis yang asri, setiap sudut vila kami menyatu harmonis
+                dengan
+                alam memanjakan Anda dengan udara laut,<br> pemandangan tak berbatas, dan kenyamanan privat yang tak
+                tergantikan.</p>
+            <div class="fotoSuasana">
+                <div data-aos="flip-left" data-aos-duration="1000" class="sub">
+                    <img src="img/ab1.png" class="card">
+                    <p class="hov">Suasana Yang Nyaman</p>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1000" class="sub">
+                    <img src="img/ab2.png" class="card">
+                    <p class="hov">Indah</p>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1000" class="sub">
+                    <img src="img/ab3.png" class="card">
+                    <p class="hov">Pemandangan Tak <br>Terbatas</p>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1000" class="sub">
+                    <img src="img/ab4.png" class="card">
+                    <p class="hov">Kenyamanan</p>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1000" class="sub">
+                    <img src="img/ab5.png" class="card">
+                    <p class="hov">Privat</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h2 data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="textGaleri">
+                Gallery</h2>
+            <div class="tombol">
+                <button class="btn-galeri active" onclick="ubahGaleri('pemandangan' , this)">Pemandangan</button>
+                <button class="btn-galeri" onclick="ubahGaleri('desain' , this)">Desain</button>
+                <button class="btn-galeri" onclick="ubahGaleri('fasilitas', this)">Fasilitas</button>
+            </div>
+            <hr
+                style="width: 48%; height: 2px; background-color: rgb(255, 255, 255); border: solid white; border-radius: 20px;">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" id="galeri">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="baris1">
+                    <img src="img/alam/alam1.jpg" class="foto">
+                    <img src="img/alam/alam2.jpg" class="foto">
+                    <img src="img/alam/alam3.jpg" class="foto">
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="baris1">
+                    <img src="img/alam/alam4.jpg" class="foto">
+                    <img src="img/alam/alam5.jpg" class="foto">
+                    <img src="img/alam/alam6.jpg" class="foto">
+                </div>
+            </div>
+        </section>
+
+        <section class="offers" id="property">
+            <h2 data-aos="fade-right" data-aos-duration="800" class="textHarga">Property</h2>
+            <div class="container-slider">
+                <div class="container-harga">
+                    <div class="kartu">
+                        <img src="img/property/1.jpg" alt="harga1" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Aruna Jati</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>2 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp800.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/2.jpg" alt="harga2" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Saka Wira</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>2 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp900.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/3.jpg" alt="harga3" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Padma Loka I</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>4 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp900.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/4.jpg" alt="harga4" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Candra Kirana</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>2 kamar</p>
+                            <!-- <p>Kolam Renang Pribadi</p> -->
+                            <p class="harga">Rp300.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/5.jpg" alt="harga5" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Aruna Jati II</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>1 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp500.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/6.jpg" alt="harga6" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Ratri Nidya I</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>2 kamar</p>
+                            <!-- <p>Kolam Renang Pribadi</p> -->
+                            <p class="harga">Rp200.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/7.jpg" alt="harga7" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Saka Wira II</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>2 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp800.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/8.jpg" alt="harga8" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Padma Loka II</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>1 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp500.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/9.jpg" alt="harga9" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Villa Aruna Jati III</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>1 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp500.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/10.jpg" alt="harga10" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Sekar Ayu</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>3 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp900.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+
+                    <!-- duplikat -->
+                    <div class="kartu">
+                        <img src="img/property/1.jpg" alt="harga1" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Aruna Jati</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>2 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp800.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/2.jpg" alt="harga2" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Saka Wira</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>2 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp900.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/3.jpg" alt="harga3" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Padma Loka I</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>4 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp900.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/4.jpg" alt="harga4" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Candra Kirana</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>2 kamar</p>
+                            <!-- <p>Kolam Renang Pribadi</p> -->
+                            <p class="harga">Rp300.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/5.jpg" alt="harga5" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Aruna Jati II</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>1 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp500.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/6.jpg" alt="harga6" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Ratri Nidya I</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>2 kamar</p>
+                            <!-- <p>Kolam Renang Pribadi</p> -->
+                            <p class="harga">Rp200.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/7.jpg" alt="harga7" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Saka Wira II</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>2 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp800.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/8.jpg" alt="harga8" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Padma Loka II</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>1 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp500.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/9.jpg" alt="harga9" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Villa Aruna Jati III</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>1 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp500.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                    <div class="kartu">
+                        <img src="img/property/10.jpg" alt="harga10" class="etalase">
+                        <div class="deskripsi">
+                            <h5>Vila Sekar Ayu</h5>
+                            <p class="lokasi">Bali, Indonesia</p>
+                        </div>
+                        <div class="fasilitas">
+                            <p id="fas">Fasilitas : </p>
+                            <p>Free Wifi</p>
+                            <p>Ac</p>
+                            <p>3 kamar</p>
+                            <p>Kolam Renang Pribadi</p>
+                            <p class="harga">Rp900.000,00 / Malam</p>
+                        </div>
+                        <!-- <button class="book">Booking</button> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="bawah">
+            <div class="kontak">
+                <h2>Hubungi kami :</h2>
+                <p>📍 Jalan Pantai Nirwana No. 21, Bali</p>
+                <p>📞 +62 812-3456-7890</p>
+                <p>✉️ hello@villamu.com</p>
+            </div>
+            <div class="medsos">
+                <h2>Media Sosial :</h2>
+                <div class="ic">
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram" id="ig"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <h2>Hak Cipta</h2>
+            <p>© 2025 Villa Nirwana. All rights reserved.</p>
+        </div>
+        <p class="min">Website by Muhammad Naufal Amar</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false // supaya animasi bisa terjadi lagi kalau diskroll bolak-balik
+        });
+    </script>
+</body>
+
+</html>
